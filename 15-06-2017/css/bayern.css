@@ -1,0 +1,39 @@
+body {
+  background: black;
+}
+
+#titre {
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 800px;
+}
+
+.article {
+  background: darkcyan;
+}
+
+.introduction {
+  font-family: arial;
+  font-size: 25px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: arial;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid black
+}
+
+td {
+  border: 1px solid black
+}
