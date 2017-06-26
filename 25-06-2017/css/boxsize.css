@@ -1,0 +1,15 @@
+.first, .second {
+  float: left;
+  border: 20px solid black;
+  padding: 20px;
+  margin: 20px;
+  width: 80%;
+}
+
+.first {
+  box-sizing: content-box;
+}
+
+.second {
+  box-sizing: border-box;
+}

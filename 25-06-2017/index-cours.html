@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>first page : Hello world</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <script type="text/javascript">
+  var isMobile = function() {
+    console.log("Navigator: " + navigator.userAgent);
+    return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+  };
+  if(isMobile() || window.screen.width < 1000) {
+    consol.log("small");
+    window.location = "index-small.html";
+  }
+  else {
+    consol.log("big")
+    window.location = "index-big.html";
+  }
+  </script>
+</head>
+<body>
+</body>
+</html>
