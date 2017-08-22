@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html language="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+<body>
+  <form class="form-horizontal">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>Créer une promotion</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="nameProm">Nom de promotion</label>
+        <div class="col-md-4">
+          <input id="nameProm" name="nameProm" placeholder="nom de promotion" class="form-control input-md" type="text">
+          <span class="help-block">Indiquez ici le nom de la promotion</span>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="AnneeProm">Année</label>
+        <div class="col-md-4">
+          <input type="number" id="AnneeProm" name="AnneeProm" placeholder="AAAA" class="form-control input-md" type="text">
+          <span class="help-block">Indiquez ici l'année de promotion</span>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="SaveProm"></label>
+        <div class="col-md-4">
+          <button id="SaveProm" name="SaveProm" class="btn btn-primary">Sauvegarder</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 #titre {
   display: flex;
+
 }
 
 
@@ -15,4 +16,14 @@ h2, h3 {
 
 li {
   font-size: 20px;
+}
+
+body{
+  background-color: black;
+}
+.article {
+  background-color: #2A4D6E;
+}
+.team {
+  display: flex;
 }
