@@ -1,17 +1,9 @@
 <?php
+  include("include/header.php");
 
-  $connection = new mysqli("localhost", "root", "123", "coursSQL1");
 
 ?>
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/base.css" />
-  <title>Liste des promotions</title>
-</head>
-<body>
+
   <form class="form-horizontal">
     <fieldset>
 
@@ -43,7 +35,5 @@
       ?>
     </fieldset>
   </form>
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-  <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+<?php include("include/footer.php") ?>

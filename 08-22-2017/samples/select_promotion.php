@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-</head>
-<body>
-
 
   <?php
-
+  include("include/header.php");
   $connection = new mysqli("localhost", "root", "123", "coursSQL1");
 
   if ($result = $connection->query("SELECT * FROM promotions")) {
@@ -25,5 +17,5 @@
   }
   ?>
 </ul>
-</body>
-</html>
+
+<?php include("include/footer.php") ?>

@@ -1,21 +1,8 @@
 <?php
+include("include/header.php");
 
-$connection = new mysqli("localhost", "root", "123", "coursSQL1");
 
-?>
-<!DOCTYPE html>
-<html language="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liste des élèves</title>
-    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/base.css" />
-  </head>
-  <body>
-    <?php
+
     if(isset($_POST["studentname"]) && $_POST["studentname"] != " ") {
       $request = sprintf("INSERT INTO eleves (firstname, lastname) VALUES ('', '%s')",
                   $_POST["studentname"]);
@@ -67,7 +54,5 @@ $connection = new mysqli("localhost", "root", "123", "coursSQL1");
 
     </fieldset>
     </form>
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+
+<?php include("include/footer.php") ?>
