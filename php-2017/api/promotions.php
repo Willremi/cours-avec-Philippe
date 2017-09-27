@@ -1,12 +1,15 @@
 <?php
-  include("config/db.php");
+  header("Access-Control-Allow-Origin: *");
+  include("../config/db.php");
   $connection = new mysqli(
     $db_host,
     $db_user,
     $db_password,
     $db_base
   );
-  $request = "SELECT * FROM eleves";
+  $connection->set_charset("utf8");
+
+  $request = "SELECT * FROM promotions";
   $result = $connection->query($request);
 
   while ($row = $result->fetch_assoc()) {

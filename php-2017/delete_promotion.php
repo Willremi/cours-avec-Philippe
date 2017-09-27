@@ -73,6 +73,7 @@
 
   </fieldset>
   </form>
+
   <?php
   include("include/footer.php");
    ?>
